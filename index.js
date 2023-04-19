@@ -2,6 +2,7 @@
 'use strict';
 const lang = 'en'
 const midnaText = 'Midna'
+const localStorageName = 'MIDNA_TIMER'
 const i18n = {
     'en': {
         'flaggedSiteWarning': 'You told me to flag this site.',
@@ -20,12 +21,14 @@ const i18n = {
     }
 }
 
-console.log('midna');
-// window.alert()
-// window.close()
-// window.confirm()
-// window.prompt()
 // check for ongoing timers
+
+const timer = getStorage(MIDNA_TIMER)
+let timerVar
+const currDate = new Date()
+if (timer && timer > currDate.getTime()) {
+    restartTimer(timer)
+}
 const isReflex = window.alert(`${midnaText}: ${i18n[lang]['flaggedSiteWarning']} ${i18n[lang]['catchReminder']} ${i18n[lang]['confirmContinue']}`)
 
 if (window.confirm(`${midnaText}: ${i18n[lang]['isThisWork']}`)) {
@@ -47,24 +50,59 @@ if (window.confirm(`${midnaText}: ${i18n[lang]['isThisWork']}`)) {
         }
     }
 } else if(window.confirm(`${midnaText}: ${i18n[lang]['isThisPlanned']} ${i18n[lang]['considerAlt']}`)) {
-    // timer and enjoy
+    // TODO: set timer and enjoy
     window.prompt(`${midnaText}: ${i18n[lang]['doNeedTimer']} ${i18n[lang]['enjoyBreak']}`)
 } else {
     // if you are here to avoid work, suggest alertatives
     window.prompt(`${midnaText}: ${i18n[lang]['considerAvoidance']} ${i18n[lang]['doNeedTimer']}`)
-    // set timer?
+    // TODO: set timer?
+    // TODO: save timer?
 }
 /**
- * 
+ *
  * @param {Number} time in minutes
  */
 function createTimer(time) {
     console.log(time)
+    setStorage(localStorageName, ((new Date()).getTime() + time * 60000))
 }
 
 /**
+ * After page reload
  * @param {String} timestamp of end of timer
  */
 function restartTimer(timestamp) {
-    //
+    console.log('restarting timer')
+    const currDate = new Date().getTime()
+    const duration = timestamp - currDate
+    if (duration > 0) {
+        timerVar = setTimeout(timerEnd, duration)
+    } else {
+        clearStorage(localStorageName)
+    }
+}
+
+// clearInterval
+
+/**
+ * Notify the user the end of the timer, give a message, ask if they want another timer
+ */
+function timerEnd() {
+    // TODO: how are you? would you like another timer? you probably shouldn't as you are having diminishing returns
+    // alternatively if you want to continue resting, consider changing your form of break such as exercise, eating, napping, etc.
+}
+
+// abstracted so this script can be used as an extension or a userscript or something else
+// TODO: experiment with GM API to understand cross-origin timers
+function getStorage(index) {
+    // return GM_getValue(index)
+    return window.localStorage.getItem(index)
+}
+function setStorage(index, value) {
+    // GM_setValue(index, value)
+    window.localStorage.setItem(index, value)
+}
+function clearStorage(index) {
+    // GM_deleteValue(index)
+    window.localStorage.removeItem(index)
 }
