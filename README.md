@@ -27,3 +27,5 @@ ChatGPT is great at learning from others. This is structured to help you ask you
 Because I desperately needed the tool. As someone with ADHD, I'm always looking for better ways to balance discipline, anxiety, and physical health.
 
 https://m.youtube.com/shorts/DhNcClbtcRg
+
+:[
