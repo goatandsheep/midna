@@ -116,7 +116,7 @@
     // TODO: experiment with GM API to understand cross-origin timers
     function getStorage(index) {
         // return GM_getValue(index)
-        return window.localStorage.getItem(index)
+        return window.localStorage['index']
     }
     function setStorage(index, value) {
         // GM_setValue(index, value)
