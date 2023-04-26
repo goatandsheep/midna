@@ -1,6 +1,10 @@
 # midna
 > Userscript browser extension to manage browser breaks with science
 
+[Try me](https://goatandsheep.github.io/midna/)! Or [install](#installation)
+
+## y?
+
 Most productivity apps are focused on self-parenting. Blocking websites you genuinely enjoy makes you demonize yourself initially for liking them and eventually the tool when you grow to hate it for stopping you. This extension is about empowering you control your breaks not tell you what to do.
 
 When we "waste" time online is it really avoiding work or are you overdue for a break? This extension helps you take healthy breaks and take back control over your schedule in a way that is fair to your dopamine receptors.
