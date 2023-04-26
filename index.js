@@ -13,7 +13,7 @@ const i18n = {
         'isThisWork': 'Are you here for work? If ya, say OK, otherwise say Cancel.',
         'doNeedTimer': 'Can I set a timer for you? If yes, how many minutes? If not, press Cancel.',
         'considerAlt': 'Also I\'m worried you didn\'t consider taking an off-screen break.',
-        'considerAvoidance': 'I know you\'re working hard, so if this is just a tough work issue, consider moving on to some other work, taking a step back to look at the bigger picture, asking for help, or pushing through for 5 more minutes. Also consider if you\'re overdue for a break. Maybe you should take this break. Will you cancel this break?',
+        'considerAvoidance': 'I know you\'re working hard, so if this is just a tough work issue, consider moving on to some other work, taking a step back to look at the bigger picture, asking for help, or pushing through for 5 more minutes. Also consider continuing with your break if you\'re overdue for one. Will you still take this break?',
         'factWorkTimers': 'I think you should because this page is engineered to lead you to content relevant to work, but is still avoidance. Also you are already addicted to working too much and going without breaks is bad for your productivity and health.',
         'enjoyBreak': 'Enjoy your break!',
         'enjoyWork': 'Good luck on your work!',
@@ -37,7 +37,7 @@ if (window.confirm(`${midnaText}: ${i18n[lang]['isThisWork']}`)) {
 } else if(window.confirm(`${midnaText}: ${i18n[lang]['isThisPlanned']} ${i18n[lang]['considerAlt']}`)) {
     // set timer and enjoy planned break
     timerLoop('enjoyBreak')
-} else if(window.confirm(`${midnaText}: ${i18n[lang]['considerAvoidance']}`)) {
+} else if(!window.confirm(`${midnaText}: ${i18n[lang]['considerAvoidance']}`)) {
     // if you are here to avoid work, it suggests alternatives or you go back
     history.back()
 } else {
