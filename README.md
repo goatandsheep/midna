@@ -1,7 +1,7 @@
 # midna
 > Userscript browser extension to manage browser breaks with science
 
-[Try me](https://goatandsheep.github.io/midna/)! Or [install](#installation)
+[See Demo](https://goatandsheep.github.io/midna/)! Or [install](#installation)
 
 ## y?
 
