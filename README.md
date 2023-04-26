@@ -28,4 +28,21 @@ Because I desperately needed the tool. As someone with ADHD, I'm always looking 
 
 https://m.youtube.com/shorts/DhNcClbtcRg
 
+## Installation
+
+Currently it is a userscript which is a rudimentary version of a browser extension. [What is a userscript?](https://medium.com/free-code-camp/applying-javascript-user-scripts-2e505643644d)
+
+1. Make sure to have a Userscript client installed:
+    1. **Google Chrome**: [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo). If you are on Android, install [Kiwi Chrome](https://play.google.com/store/apps/details?id=com.kiwibrowser.browser&hl=en_CA&gl=US) first.
+    1. **Mozilla Firefox**: [Greasemonkey](https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/) or [Tampermonkey](https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/).
+        1. Mobile: [Tampermonkey](https://addons.mozilla.org/en-CA/android/addon/tampermonkey/)
+    1. **Opera**: [enable chrome extensions](https://addons.opera.com/en/extensions/details/install-chrome-extensions/), then install Tampermonkey from the Chrome extension store.
+    1. **Microsoft Edge**: [Tampermonkey](https://microsoftedge.microsoft.com/addons/detail/tampermonkey/iikmkjmpaadaobahmlepeloendndfphd).
+1. [Click here to install the userscript](https://goatandsheep.github.io/midna/midna.user.js)
+1. Confirm your intention to install the Userscript.
+
+## Future Features
+
+* One timer for all break websites using cookies.
+
 :[
