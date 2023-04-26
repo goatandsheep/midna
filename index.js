@@ -23,7 +23,7 @@ const i18n = {
 
 // check for ongoing timers
 
-const timer = getStorage(MIDNA_TIMER)
+const timer = getStorage(localStorageName)
 let timerVar
 const currDate = new Date()
 if (timer && timer > currDate.getTime()) {
