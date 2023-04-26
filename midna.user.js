@@ -16,7 +16,7 @@
         'en': {
             'flaggedSiteWarning': 'You told me to flag this site.',
             'catchReminder': 'Did you come here as a reflex to avoid work?',
-            'confirmContinue': 'If you didn\'t intend to, I recommend you close the page and I\'ll see you later.',
+            'confirmContinue': 'If you didn\'t plan to take a break, I recommend you close the page and I\'ll see you later.',
             'isAvoidance': 'Are you here to avoid work?',
             'isThisPlanned': 'Say OK if this a planned break or Cancel if you are here to avoid work (no judgey!).',
             'isThisWork': 'Are you here for work? If ya, say OK, otherwise say Cancel.',
