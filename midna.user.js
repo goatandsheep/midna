@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Midna
-// @version      0.1
+// @version      0.2
 // @description  Browser companion to take control of breaks
 // @author       Kemal Ahmed <goatandsheep@gmail.com>
 // @match        *
