@@ -1,7 +1,7 @@
 # midna
 > Userscript browser extension to manage browser breaks with science
 
-[Try me](https://goatandsheep.github.io/midna/)! Or [install](#installation)
+[See Demo](https://goatandsheep.github.io/midna/)! Or [install](#installation)
 
 ## y?
 
@@ -9,12 +9,23 @@ Most productivity apps are focused on self-parenting. Blocking websites you genu
 
 When we "waste" time online is it really avoiding work or are you overdue for a break? This extension helps you take healthy breaks and take back control over your schedule in a way that is fair to your dopamine receptors.
 
-Before we talk about what this does, let's talk about a few questions about breaks:
+Before we talk about what this does, let's talk about the psychology of breaks:
 
-1. How do you know when you need a break? If we can be stimulated by our work then isn't it possible for us to be addicted to work too? Yes we need to recognize the signs of overwork and over-play. If you're working sometimes we reach for social media as an escape. But there can be good reasons for this too. Maybe you actually have worked too long and need a break. Our extension will ask if you want a timer to take a controlled break or remind you to consider an off screen break. Perhaps you're working on a tough work issue and you instinctively open a danger site to avoid it. When you reach for social tabs, the extension will ask if you would benefit from moving on to something else, taking a step back to look at the bigger picture, ask for help, or push through for 5 more minutes. The extension is not meant to stop you from taking a break. Rather it is meant to help you make a good decision and stay in control. It's easy for us to fall into habits of addiction to websites engineered to hold our attention better than it is healthy to. On the flip side if you're trying to work on being more disciplined, you can enter a different problem because you don't want to get in the habit of avoiding tough problems but you don't want to spend so long down the rabbit hole trying to stay disciplined as this actually hinders your productivity.
-2. What is the difference between an unplanned escape / addiction and a controlled break? If you are taking planned breaks with a timer and are intentional in how long you want to spend, your break is controlled. For example, if you always demonize opening Facebook you may regret missing posts or not being able to ever post. This regret will make you less happy about wanting to use a particular planning system because it prevents you from doing something you want to do just not too long. If you plan to spend 15 minutes to post some pictures and catching up then you are taking a planned break. When you are out of control, the extension is meant to remind you to take control not necessarily tell you what to do.
-3. What if you need a danger website for work?
+<details>
+<summary>How do you know when you need a break?</summary>
+
+If we can be stimulated by our work then isn't it possible for us to be addicted to work too? Yes we need to recognize the signs of overwork and over-play. If you're working sometimes we reach for social media as an escape. But there can be good reasons for this too. Maybe you actually have worked too long and need a break. Our extension will ask if you want a timer to take a controlled break or remind you to consider an off screen break. Perhaps you're working on a tough work issue and you instinctively open a danger site to avoid it. When you reach for social tabs, the extension will ask if you would benefit from moving on to something else, taking a step back to look at the bigger picture, ask for help, or push through for 5 more minutes. The extension is not meant to stop you from taking a break. Rather it is meant to help you make a good decision and stay in control. It's easy for us to fall into habits of addiction to websites engineered to hold our attention better than it is healthy to. On the flip side if you're trying to work on being more disciplined, you can enter a different problem because you don't want to get in the habit of avoiding tough problems but you don't want to spend so long down the rabbit hole trying to stay disciplined as this actually hinders your productivity.
+</details>
+<details>
+<summary>What is the difference between an unplanned escape / addiction and a controlled break?</summary>
+
+If you are taking planned breaks with a timer and are intentional in how long you want to spend, your break is controlled. For example, if you always demonize opening Facebook you may regret missing posts or not being able to ever post. This regret will make you less happy about wanting to use a particular planning system because it prevents you from doing something you want to do just not too long. If you plan to spend 15 minutes to post some pictures and catching up then you are taking a planned break. When you are out of control, the extension is meant to remind you to take control not necessarily tell you what to do.
+</details>
+<details>
+<summary>What if you need a danger website for work?</summary>
+
 If you open a website like YouTube that can be used for work like tutorials, you don't want to be prevented from using an effective tool. Midna initially asks you if it is for work. In this case, you can set a timer for how long. This is because it's easy to click something off topic. It is also easy to convince yourself the next thing you open is work because it is informative and can even be relevant to work even if you're just using it as an escape. Also it is still not healthy to work for extended periods of time. Think 30 minute intervals like the Pomodoro technique. We need moderation not avoidance.
+</details>
 
 ## So what does this do?
 
