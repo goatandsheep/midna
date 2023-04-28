@@ -74,18 +74,19 @@
             }
             if (timerTime && !isNaN(parseInt(timerTime))) {
                 // create timer
-                createTimer(timerTime)
+                createTimer(timerEnd, timerTime * 60000)
                 invalid = false
             }
         }
     }
 
     /**
-     * @param {Number} time in minutes
+     * @param {Number} time in milliseconds
+     * @param {Function} timerCallback
      */
-    function createTimer(time) {
-        console.log(time)
-        setStorage(localStorageName, ((new Date()).getTime() + time * 60000))
+    function createTimer(timerCallback, time) {
+        setTimeout(timerCallback, time)
+        setStorage(localStorageName, ((new Date()).getTime() + time))
     }
 
     /**
@@ -97,7 +98,7 @@
         const currDate = new Date().getTime()
         const duration = timestamp - currDate
         if (duration > 0) {
-            timerVar = setTimeout(timerEnd, duration)
+            timerVar = createTimer(timerEnd, duration)
         } else {
             clearStorage(localStorageName)
         }
